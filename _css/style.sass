@@ -1,0 +1,602 @@
+/* Tango colors */
+$butter1:     #fce94f
+$butter2:     #edd400
+$butter3:     #c4a000
+$orange1:     #fcaf3e
+$orange2:     #f57900
+$orange3:     #ce5c00
+$chocolate1:  #e9b96e
+$chocolate2:  #c17d11
+$chocolate3:  #8f5902
+$chameleon1:  #8ae234
+$chameleon2:  #73d216
+$chameleon3:  #4e9a06
+$skyblue1:    #729fcf
+$skyblue2:    #3465a4
+$skyblue3:    #204a87
+$plum1:       #ad7fa8
+$plum2:       #75507b
+$plum3:       #5c3566
+$scarletred1: #ef2929
+$scarletred2: #cc0000
+$scarletred3: #a40000
+$aluminium1:  #eeeeec
+$aluminium2:  #d3d7cf
+$aluminium3:  #babdb6
+$aluminium4:  #888a85
+$aluminium5:  #555753
+$aluminium6:  #2e3436
+
+
+
+/* ---------------------------- */
+/* Color set */
+/* ---------------------------- */
+
+$color1: #766151
+$color2: #514947
+$color3: #48372F
+
+
+
+/* ---------------------------- */
+/* Responsive properties */
+/* ---------------------------- */
+
+$media: screen
+$feature: max-width
+$value: 719px
+
+$feature2: min-width
+$value2: 720px
+
+/* ---------------------------- */
+/* Style definitions */
+/* ---------------------------- */
+
+%content-width
+  max-width: 45em
+
+@mixin color-block($color)
+  background-color: white
+  border-top: 3px solid $color
+  border-left: 1px solid $aluminium3
+  border-bottom: 1px solid $aluminium3
+  border-right: 1px solid $aluminium3
+
+/* ---------------------------- */
+/* Styles on DOM */
+/* ---------------------------- */
+
+/* Applied on basic elements */
+html
+  background-color: $aluminium1
+  color: $aluminium6
+
+a, a:active, a:visited, code.url
+  color: $aluminium5
+  text-decoration: none
+  border-bottom: 1px solid $color2
+  &:not([class~="alone"]):hover
+    background: $color2
+    color: $aluminium1
+    transition: 500ms ease
+h1, h2, h3, h4, h5, h6
+  color: $color2
+  font-weight: normal
+  
+hr
+  color: $aluminium2
+  background-color: $aluminium2
+  height: 1px
+  border: 0
+  
+/* Common: Header and footer */
+body
+  > header,footer
+    background-color: $aluminium6
+    text-align: center
+    > nav > ul
+      -webkit-padding-start: 0px
+      padding: 0 0
+      margin: 0
+      li
+        @media #{$media} and ($feature: $value)
+          padding: 0
+          display: block
+        @media #{$media} and ($feature2: $value2)
+          padding: 0.9em 0
+          display: inline-block
+        a
+          color: $aluminium2 !important
+          @media #{$media} and ($feature: $value)
+            display: block
+            margin: 0
+          border-bottom: 0 !important
+          padding: 1em 1em 0.9em 1em
+          margin: 0
+          &:not([class~="alone"]):hover
+            transition: 500ms ease
+            color: white !important
+            @media #{$media} and ($feature2: $value2)
+              background: none !important
+            @media #{$media} and ($feature: $value)
+              background-color: $aluminium5 !important
+      li+li
+        @media #{$media} and ($feature: $value)
+          border-top: 1px solid $aluminium5
+          
+/* Header */
+body
+  > header
+    border-bottom: 3px solid $color3
+    a
+      &:not([class~="alone"]):hover
+        @media #{$media} and ($feature2: $value2)
+          box-shadow: 0 3px 0px $color1
+    > nav > #toggle-nav
+      background-color: transparent
+      padding : 0.5em 0
+      border: 0
+      color: $aluminium2
+      > .visually-hidden
+        margin: 0
+        cursor: pointer
+        font-size: 1.8em
+    > nav.is-closed
+      > ul
+        max-height: 0
+        visibility: hidden
+          
+/* Footer */
+body
+  > footer
+    border-top: 3px solid $color3
+    box-shadow: 0 3px 0px $color3
+    a
+      &:not([class~="alone"]):hover
+        @media #{$media} and ($feature2: $value2)
+          box-shadow: 0 -3px 0px $color1
+
+/* Aside */
+aside
+  background-color: $aluminium2
+  border-top: 3px solid $aluminium3
+  padding: 0
+  ul
+    -webkit-padding-start: 0px
+    @extend %content-width
+    padding: 0
+    margin: auto
+    li
+      @media #{$media} and ($feature: $value)
+        display: block
+      @media #{$media} and ($feature2: $value2)
+        padding: 0.9em 0
+        display: inline-block
+      > a
+        border-bottom: 0 !important
+        padding: 0.95em 1em 0.9em 1em
+        &:not([class~="alone"]):hover
+          @media #{$media} and ($feature2: $value2)
+            background: none !important
+            color: $aluminium6 !important
+            box-shadow: 0 -3px 0 $color1
+        @media #{$media} and ($feature: $value)
+          display: block
+    li+li
+      @media #{$media} and ($feature: $value)
+        border-top: 1px solid $aluminium3
+ 
+/* Content title */         
+.main
+  > header
+    > ul
+      height: auto
+      position: relative
+      margin: 0
+      padding: 0
+      border-bottom: 1px solid $aluminium3
+      list-style-type: none
+      > li
+        margin: 0
+        padding: 0
+        > img
+          width: 100%
+          height: auto
+          position: absolute
+          left: 0px
+          top: 0px
+    > ul:before
+      content: ""
+      display: block
+      padding-top: 40.57%
+  > h2.subtitle
+    color: $aluminium6
+    text-align: center
+    font-size: 1.8em
+    margin: auto
+    border-bottom: 1px solid $aluminium3
+    padding: 0.5em
+  > h1
+    background-color: $color2
+    color: $aluminium1
+    border-bottom: 3px solid $aluminium3
+    margin: 0
+    padding: 0.3em
+    text-align: center
+    font-weight: normal
+    
+/* Article */         
+.main
+  article
+    @extend %content-width
+    margin: auto
+    padding: 0.5em
+    ul.tags
+      list-style-type: none
+      -webkit-padding-start: 0px
+      margin-top: 1em
+      margin-bottom: 0em
+      padding: 0
+      li
+        a
+          border-bottom: none
+    > ul.tags > li
+      padding: 0.5em 0 0.5em 0
+      display: inline-block
+      min-width: 14em
+
+    header
+      img.author
+        float: right
+        position: relative
+        top: 0.6em
+        @media #{$media} and ($feature: $value)
+          display: none
+        
+      ul
+        list-style-type: none
+        -webkit-padding-start: 0px
+        padding: 0
+        li
+          display: inline-block
+          margin-right: 2em
+        
+    blockquote
+      overflow: hidden
+      &.gallery
+        max-height: 8.1em
+      
+      img
+        height: 7.9em
+        margin-left: 5px
+        box-shadow: 0 0 0
+        border: 1px solid #babdb6
+        
+    p
+      text-align: justify
+      
+    pre,code
+      font-size: 0.8em
+      
+    img
+      max-width: 100%
+      
+/* Article header */
+.postdetails
+  color: $color2
+  font-weight: normal
+  @extend %content-width
+  @include color-block($color1)
+  margin-bottom: 2em
+  padding: 0 1em 1em 1em
+  line-height: 1.5em
+  >ul > li
+    font-weight: bold
+
+/* Posts */
+body
+  ul.post-list
+    list-style-type: none
+    padding: 0
+    > li
+      @include color-block($color1)
+      > h2
+        margin: 0
+        font-weight: bold
+        > a
+          padding: 0.5em
+          display: block
+          border-bottom: 0 !important
+          &:not([class~="alone"]):hover
+            background-color: $color1 !important
+            box-shadow: 0 -3px 0 $color2
+      > ul
+        padding: 0
+        border-bottom: 1px solid $aluminium3
+        > li
+          display: inline-block
+          padding: 0.5em
+          color: $aluminium5
+    > li+li
+      margin-top: 1em
+    > li.archives
+      > h2
+        padding: 0.5em
+        color: $aluminium5
+        border-bottom: 1px solid $aluminium3
+      > ul
+        border: none
+        > li
+          display: block
+          > ul > li
+            padding: 0.5em
+      > ul+ul
+        margin-top: 0.5em
+  ul.post-list, ul.post-list ul
+    list-style-type: none
+
+/* Gallery overview */
+.gallery
+  position: relative
+  list-style-type: none
+  padding: 0
+  a, a:active, a:visited
+    border: 0
+    &:hover
+      background: none !important
+    img
+      max-width: 100%
+
+/* Image style */
+img.pola, blockquote img
+  background: #eeeeec
+  padding: 5px 5px 5px 5px
+  border: 1px solid #fff
+  border-radius: 3px
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4)
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4)
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4)
+      
+/* Index buttons */
+nav.index-menu
+  @extend %content-width
+  margin: auto
+  > ul
+    list-style-type: none
+    margin: 1em 1em 2em 1em
+    padding: 0
+    > li
+      margin: auto
+      font-size: 2em
+      max-width: 7em
+      > a
+        display: block
+        margin: auto
+        text-align: center !important
+        @include color-block($color1)
+        &:hover
+          background-color: $color1 !important
+          border-top: 3px solid $color2
+          color: white !important
+    > li+li
+      margin-top: 1em
+      
+/* Blockquote */
+blockquote
+  margin-left: 1em
+  padding-left: 1em
+  border-left: 3px solid $plum2
+  blockquote
+    border-left: 3px solid $chocolate2
+    blockquote
+      border-left: 3px solid $skyblue2
+      blockquote
+        border-left: 3px solid $chameleon2
+        blockquote
+          border-left: 3px solid $orange2
+          blockquote
+            border-left: 3px solid $scarletred2
+            blockquote
+              border-left: 3px solid $butter2
+              
+/* Social */
+.color
+  &.icon-twitter-sign:before
+    font-size: 130%
+    color: #3cf
+  &.icon-google-plus-sign:before
+    font-size: 130%
+    color: #DD4B39
+  &.icon-github-sign:before
+    font-size: 130%
+    color: #4183C4
+  &.icon-linkedin-sign:before
+    font-size: 130%
+    color: #71C5EF
+  &.icon-facebook-sign:before
+    font-size: 130%
+    color: #3b5998
+  &.icon-diaspora-sign:before
+    font-size: 130%
+  
+.social
+  list-style-type: none
+  padding: 0
+  > li
+    display: inline-block
+    margin: auto
+    width: 7em
+    > a
+      display: block
+      margin: auto
+      text-align: center !important
+      @include color-block($color1)
+      &:hover
+        background-color: $color1 !important
+        border-top: 3px solid $color2
+        color: white !important
+  > li+li
+    margin-top: 1em
+              
+/* Code */
+p, article
+  code
+    background-color: $aluminium2
+    border: 1px solid $aluminium3
+    padding-left: 2px
+    padding-right: 2px
+pre
+  background: $aluminium2
+  padding: 0.5em
+  border: 2px solid $aluminium3
+code, pre
+  .p
+    color: $aluminium4
+    font-weight: bold
+  .hll
+    background-color: $aluminium2
+  .c /* Comment */
+    color: $aluminium3
+  .err /* Error */
+    color: $scarletred2
+  .k /* Keyword */
+    color: $skyblue2
+    font-weight: bold
+  .cm /* Comment.Multiline */
+    color: $aluminium3
+  .cp /* Comment.Preproc */
+    color: $aluminium3
+    font-weight: bold
+  .c1 /* Comment.Single */
+    color: $aluminium3
+  .cs /* Comment.Special */
+    color: $aluminium3
+    font-weight: bold
+  .gd /* Generic.Deleted */
+    color: $aluminium3
+  .ge /* Generic.Emph */
+    font-style: italic
+  .gr /* Generic.Error */
+    color: $scarletred2
+  .gh /* Generic.Heading */
+    color: $aluminium4
+  .gi /* Generic.Inserted */
+    color: $aluminium4
+  .go /* Generic.Output */
+    color: $aluminium3
+  .gp /* Generic.Prompt */
+    color: $aluminium3
+  .gs /* Generic.Strong */
+    font-weight: bold
+  .gu /* Generic.Subheading */
+    color: $aluminium3
+  .gt /* Generic.Traceback */
+    color: $aluminium4
+  .kc /* Keyword.Constant */
+    color: $skyblue2
+    font-weight: bold
+  .kd /* Keyword.Declaration */
+    color: $skyblue2
+    font-weight: bold
+  .kn /* Keyword.Namespace */
+    color: $skyblue2
+    font-weight: bold
+  .kp /* Keyword.Pseudo */
+    color: $skyblue2
+  .kr /* Keyword.Reserved */
+    color: $skyblue2
+    font-weight: bold
+  .kt /* Keyword.Type */
+    color: $aluminium3
+    font-weight: bold
+  .m /* Literal.Number */
+    color: $skyblue1
+    font-weight: bold
+  .s /* Literal.String */
+    color: $chameleon2
+  .na /* Name.Attribute */
+    color: $plum2
+  .nb /* Name.Builtin */
+    color: $aluminium4
+  .nc /* Name.Class */
+    color: $orange2
+    font-weight: bold
+  .no /* Name.Constant */
+    color: $aluminium4
+    font-weight: bold
+  .nd /* Name.Decorator */
+    color: $aluminium4
+  .ne /* Name.Exception */
+    color: $orange2
+    font-weight: bold
+  .nf /* Name.Function */
+    color: $skyblue2
+    font-weight: bold
+  .nl /* Name.Label */
+    color: $plum2
+    font-style: italic
+  .nn /* Name.Namespace */
+    color: $orange2
+    font-weight: bold
+  .py /* Name.Property */
+    color: $plum2
+    font-weight: bold
+  .nt /* Name.Tag */
+    color: $orange2
+    font-weight: bold
+  .nv /* Name.Variable */
+    color: $plum2
+  .ow /* Operator.Word */
+    color: $skyblue2
+  .w /* Text.Whitespace */
+    color: $aluminium4
+  .mf /* Literal.Number.Float */
+    color: $skyblue1
+    font-weight: bold
+  .mh /* Literal.Number.Hex */
+    color: $skyblue1
+    font-weight: bold
+  .mi /* Literal.Number.Integer */
+    color: $skyblue1
+    font-weight: bold
+  .mo /* Literal.Number.Oct */
+    color: $skyblue1
+    font-weight: bold
+  .sb /* Literal.String.Backtick */
+    color: $chameleon2
+  .sc /* Literal.String.Char */
+    color: $chameleon2
+  .sd /* Literal.String.Doc */
+    color: $chameleon2
+  .s2 /* Literal.String.Double */
+    color: $chameleon2
+  .se /* Literal.String.Escape */
+    color: $chameleon2
+  .sh /* Literal.String.Heredoc */
+    color: $chameleon2
+  .si /* Literal.String.Interpol */
+    color: $chameleon2
+  .sx /* Literal.String.Other */
+    color: $chameleon2
+  .sr /* Literal.String.Regex */
+    color: $skyblue2
+  .s1 /* Literal.String.Single */
+    color: $chameleon2
+  .ss /* Literal.String.Symbol */
+    color: $chameleon2
+  .bp /* Name.Builtin.Pseudo */
+    color: $skyblue2
+  .vc /* Name.Variable.Class */
+    color: $plum2
+  .vg /* Name.Variable.Global */
+    color: $skyblue2
+  .vi /* Name.Variable.Instance */
+    color: $skyblue2
+  .il /* Literal.Number.Integer.Long */
+    color: $skyblue1
+    font-weight: bold

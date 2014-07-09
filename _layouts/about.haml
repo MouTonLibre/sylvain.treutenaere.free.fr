@@ -1,0 +1,34 @@
+---
+layout: master
+---
+
+%div(itemprop="articleBody")
+  = content
+
+%nav
+  %h1 Me contacter
+  %ul.social
+    - if @contents.account? "twitter"
+      %li
+        %a.icon-twitter-sign.color{:href => "#{@contents.account "twitter"}"}
+          Twitter
+    - if @contents.account? "gplus"
+      %li
+        %a.icon-google-plus-sign.color{:href => "#{@contents.account "gplus"}?rel=author"}
+          Google+
+    - if @contents.account? "github"
+      %li
+        %a.icon-github-sign.color{:href => "#{@contents.account "github"}"}
+          Github
+    - if @contents.account? "linkedin"
+      %li
+        %a.icon-linkedin-sign.color{:href => "#{@contents.account "linkedin"}"}
+          LinkedIn
+    - if @contents.account? "facebook"
+      %li
+        %a.icon-facebook-sign.color{:href => "#{@contents.account "facebook"}"}
+          Facebook
+    - if @contents.account? "diaspora"
+      %li
+        %a.icon-diaspora-sign.color{:href => "#{@contents.account "diaspora"}"}
+          Diaspora*

@@ -1,0 +1,47 @@
+---
+layout: master
+---
+
+%header.postdetails
+  - if @scope.gravatar?
+    %img.author{:src => @scope.gravatar, :alt => @scope.author}
+
+  %ul
+    %li.icon-user
+      = @scope.author
+    %li.icon-calendar
+      = @scope.formated_date
+
+  %ul.tags
+    - tags.each do |tag|
+      %li
+        %a.icon-tag{:href => link_to("tags/posts/#{tag}")}
+          = tag
+
+  - if @scope.comments?
+    %h5
+      %a(href="#comments")
+        = "(#{@scope.comments.size} commentaire#{if @scope.comments.size > 1 then "s" end})"
+
+%div(itemprop="articleBody")
+  = content
+
+- if @scope.comments?
+  %h2
+    %a#comments
+      Commentaires
+  - @scope.comments.each do |comment|
+    %article
+      %header
+        %h3= comment.title
+        %h4
+          Par
+          %a{:href => comment.website, :rel => "nofollow"}
+            = comment.author
+          , le
+          = comment.date
+
+        = comment.content
+
+%div.social
+  = render :partial => "diaspora_share"

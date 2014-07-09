@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<feed xmlns='http://www.w3.org/2005/Atom'>
+  <title>Sylvain Treutenaere</title>
+  <link href='http://sylvain.treutenaere.free.fr/atom.xml' rel='self' />
+  <link href='http://sylvain.treutenaere.free.fr/' />
+  <updated>2014-07-09T17:45:39Z</updated>
+  <id>http://sylvain.treutenaere.free.fr/</id>
+  <author>
+    <name>Sylvain Treutenaere</name>
+  </author>
+  <entry>
+    <title>KISS, j'étais fait pour t'aimer</title>
+    <link href='http://sylvain.treutenaere.free.fr/posts/2014/03/15/Kiss_je_suis_fait_pour_taimer.html' />
+    <updated>2014-03-15T00:00:00Z</updated>
+    <id>http://sylvain.treutenaere.free.fr/posts/2014/03/15/Kiss_je_suis_fait_pour_taimer.html</id>
+    <content type='xhtml'>
+      <div xmlns='http://www.w3.org/1999/xhtml'>
+        <p>Sous ce titre racoleur destiné aux <a href="https://www.youtube.com/watch?v=CmELf8DJAVY">métalleux anglophiles</a>, débute une <a href="/tags/posts/KISS.html">petite série d&#39;articles dédiée à KISS</a>, un principe d&#39;ingénierie essentiel. Ce premier article introduit et définit ce concept, tandis que les suivants aborderont son utilisation par le biais d&#39;exemples concrets.</p>
+
+<p>Accrochez-vous donc durant ces quelques lignes, car le meilleur est à venir.</p>
+
+<h1>La conception</h1>
+
+<p>La conception est le fait d&#39;agencer des <strong>sous-ensembles</strong>, innovants ou non, afin de créer un <strong>système</strong> qui répondra à un <strong>besoin préétabli</strong>.</p>
+
+<p>Il est donc primordial, avant de se lancer dans une phase de conception, de définir les besoins. On est ainsi en présence d&#39;un postulat de départ qui liste l&#39;existant et d&#39;un but à atteindre.</p>
+
+<p>Partant de cet état de fait, un système doit être créé afin de combler le manque actuel, sachant que selon <a href="http://fr.wikipedia.org/wiki/Syst%C3%A8me">Wikipédia</a>&nbsp;:</p>
+
+<blockquote>
+<p>«&nbsp;Un système est un ensemble d&#39;éléments interagissant entre eux selon certains principes ou règles.&nbsp;»</p>
+</blockquote>
+
+<p>La création intellectuelle de ce système par le choix des éléments et par la définition des principes d&#39;interaction est ce que l&#39;on appelle la conception.</p>
+
+<p>Prenons un exemple.</p>
+
+<p>Imaginez que vous ayez <em>besoin de communiquer</em> avec une personne qui se trouvera à une centaine de mètre de vous dans quelques minutes. Afin de préserver votre voix, il ne sera pas possible de crier. Par hasard (eh bien ça alors&nbsp;!), vous avez <em>deux pots de yaourts</em> et une longue <em>ficelle</em>. En reliant ces deux pots de yaourts avec la ficelle, un <em>téléphone</em> vient d&#39;être conçu&nbsp;!</p>
+
+<h1>Que vient faire KISS ici ?</h1>
+
+<p>KISS est un acronyme de «&nbsp;Keep it simple [&amp;] stupid&nbsp;», qui une fois traduit donne «&nbsp;Garde ça simple [et] stupide&nbsp;». Il existe une multitude de variantes à cet acronyme et j&#39;ai choisi de retenir la version historique, car peu importe la forme, c&#39;est le fond qui est intéressant.</p>
+
+<p>Sous ces quelques mots se cache une ligne directrice de conception pleine de sens. Elle indique que tout système conçu, matériel ou virtuel, doit garder une complexité minimale. Le terme «&nbsp;simple&nbsp;» postule que tout ce qui n&#39;est pas nécessaire doit être exclu, tandis que le terme «&nbsp;stupide&nbsp;» stipule que l&#39;ensemble doit être facile à comprendre. «&nbsp;Stupide&nbsp;» n&#39;a rien de péjoratif ici puisqu&#39;il sous-entend que lorsque l&#39;on essaye de comprendre comment le système fonctionne, on devrait être amené à penser&nbsp;: «&nbsp;Pourquoi n&#39;y ai-je pas pensé plus tôt&nbsp;!&nbsp;».</p>
+
+<h2>Intérêts</h2>
+
+<p>En respectant le principe KISS, la fiabilité et la maintenabilité s&#39;en voient améliorées. Toute option supplémentaire est source potentielle de problème, et en cas de panne, source de vérification et de besoin de compréhension supplémentaires.</p>
+
+<blockquote>
+<p>«&nbsp;Il semble que la perfection soit atteinte non quand il n&#39;y a plus rien à ajouter, mais quand il n&#39;y a plus rien à retrancher&nbsp;»</p>
+
+<p>— <em>Antoine de Saint-Exupéry</em>, Terre des hommes, chap. III, 1939</p>
+</blockquote>
+
+<p>Il est intéressant de noter qu&#39;ici il n&#39;est aucunement question de l&#39;utilisateur final puisque cela doit être transparent pour lui. La <em>simplicité</em> et le <em>minimalisme</em> concerne les entrailles de l&#39;objet et non l&#39;ergonomie.</p>
+
+<h1>À suivre...</h1>
+
+<p>Les fondements de ce principe sont donc énoncés ici, d&#39;une façon cependant un peu abrupte. C&#39;est pourquoi les prochains articles présenteront des exemples concrets dans différents domaines tels que l&#39;informatique, la conception mécanique, la rédaction ou d&#39;autres suivant mon inspiration.</p>
+
+<p>Et pour finir, une citation du — certainement — plus célèbre des concepteurs&nbsp;:</p>
+
+<blockquote>
+<p>«&nbsp;La simplicité est la sophistication suprême&nbsp;»</p>
+
+<p>— <em>Léonard de Vinci</em></p>
+</blockquote>
+      </div>
+    </content>
+  </entry>
+</feed>

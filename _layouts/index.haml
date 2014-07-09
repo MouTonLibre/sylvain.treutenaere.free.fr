@@ -1,0 +1,42 @@
+!!! 5
+%html(lang="en" prefix="og: http://ogp.me/ns#")
+  %head
+    = render :partial => "header"
+
+  %body(class="blue")
+    = render :partial => "body_header"
+
+    %section.main
+      %h1
+        = @scope.title
+      
+      - if @scope.subtitle
+        %h2.subtitle
+          = @scope.subtitle
+          
+      - if @scope.header?
+        %header
+          %ul#slide
+            - @scope.header.each do |headimg|
+              %li
+                %img{:src => headimg, :alt => "headimg"}
+      
+      %article
+        = content
+            
+      %nav.index-menu
+        %ul
+          %li
+            %a.icon-book{:href => link_to("blog")}
+              = "Articles"
+          %li
+            %a.icon-camera{:href => link_to("galeries")}
+              = "Galeries"
+          %li
+            %a.icon-user{:href => link_to("cv")}
+              = "CV"
+
+    = render :partial => "body_footer"
+    - if @scope.header?
+      %script{:src => link_to("minislider.js")}
+      %script{:src => link_to("callslider.js")}

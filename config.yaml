@@ -1,0 +1,16 @@
+site_url: http://sylvain.treutenaere.free.fr
+title: Sylvain Treutenaere
+name: Sylvain Treutenaere
+twitter_site: https://twitter.com/STreutenaere
+twitter_creator: https://twitter.com/STreutenaere
+default_description: Des photos, des articles, ma thèse.
+accounts:
+    facebook: https://www.facebook.com/sylvain.treutenaere
+    twitter: https://twitter.com/STreutenaere
+    gplus: https://plus.google.com/115801378493371254521
+    github: http://github.com/
+    linkedin: http://www.linkedin.com/pub/sylvain-treutenaere/40/939/b82
+    diaspora: https://diaspora-fr.org/u/starsheep
+assets:
+    css: [application]
+    js: [menu, minislider, callslider]

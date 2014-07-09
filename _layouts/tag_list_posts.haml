@@ -1,0 +1,32 @@
+!!! 5
+%html(lang="en" prefix="og: http://ogp.me/ns#")
+  %head
+    = render :partial => "header"
+
+  %body(class="blue")
+    = render :partial => "body_header"
+
+    %section.main
+      %h1
+        = @scope.title
+        
+      - if @scope.subtitle
+        %h2.subtitle
+          = @scope.subtitle
+        
+      %article
+        = content
+
+        %ul.tags
+          - $tags_posts.each do |tag, value|
+            %li
+              %a.icon-tag{:href => link_to("tags/posts/#{tag}")}
+                = tag
+                
+    %aside
+      %ul
+        %li
+          %a.icon-calendar{:href => link_to("archives")}
+            Archives
+
+    = render :partial => "body_footer"

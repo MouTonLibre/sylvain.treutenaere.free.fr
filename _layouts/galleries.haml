@@ -1,0 +1,39 @@
+!!! 5
+%html(lang="en" prefix="og: http://ogp.me/ns#")
+  %head
+    = render :partial => "header"
+
+  %body(class="blue")
+    = render :partial => "body_header"
+
+    %section.main
+      %h1
+        = @scope.title
+      %article
+        = content
+
+        %ul.post-list
+          - if @scope.limit > 0
+            - posts = @contents.list_last_galleries(@scope.limit)
+            - posts.each do |post|
+              %li
+                %h2
+                  %a{:href => link_to(post.url)}
+                    = post.title
+                %ul
+                  %li.icon-calendar
+                    = post.date.strftime "%F"
+                  %li.icon-user
+                    = post.author
+                - if post.description?
+                  %blockquote.gallery= post.description
+                - else
+                  %blockquote.gallery= post.excerpt(true)
+        
+    %aside
+      %ul
+        %li
+          %a.icon-tags{:href => link_to("categories_galleries")}
+            Catégories
+
+    = render :partial => "body_footer"

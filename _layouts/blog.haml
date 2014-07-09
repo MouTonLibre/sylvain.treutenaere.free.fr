@@ -1,0 +1,91 @@
+!!! 5
+%html(lang="en" prefix="og: http://ogp.me/ns#")
+  %head
+    = render :partial => "header"
+
+  %body(class="blue")
+    = render :partial => "body_header"
+
+    %section.main
+      %h1
+        = @scope.title
+        
+      - if @scope.subtitle
+        %h2.subtitle
+          = @scope.subtitle
+        
+      %article
+        = content
+
+        %ul.post-list
+          - if @scope.limit > 0
+            - posts = @contents.list_last_posts(@scope.limit)
+            - posts.each do |post|
+              %li
+                %h2
+                  %a{:href => link_to(post.url)}
+                    = post.title
+                %ul
+                  %li.icon-calendar
+                    = post.date.strftime "%F"
+                  %li.icon-user
+                    = post.author
+                - if post.description?
+                  %blockquote= post.description
+                - else
+                  %blockquote= post.excerpt(true)
+          - else
+            - posts = @contents.list_posts_by_date
+            - posts.keys.sort.reverse.each do |year|
+              - year_posts = posts[year]
+              - year_posts.keys.sort.reverse.each do |month|
+                - month_posts = year_posts[month]
+                %li.archives
+                  %h2
+                    - case month
+                    - when 1
+                      = "Janvier #{year}"
+                    - when 2
+                      = "Février #{year}"
+                    - when 3
+                      = "Mars #{year}"
+                    - when 4
+                      = "Avril #{year}"
+                    - when 5
+                      = "Mai #{year}"
+                    - when 6
+                      = "Juin #{year}"
+                    - when 7
+                      = "Juillet #{year}"
+                    - when 8
+                      = "Août #{year}"
+                    - when 9
+                      = "Septembre #{year}"
+                    - when 10
+                      = "Octobre #{year}"
+                    - when 11
+                      = "Novembre #{year}"
+                    - when 12
+                      = "Décembre #{year}"
+                  %ul
+                    - month_posts.keys.sort.reverse.each do |day|
+                      - day_posts = month_posts[day]
+                      %li.icon-calendar
+                        = "#{day}-#{month}-#{year}"
+                        %ul
+                          - day_posts.each do |post|
+                            %li.icon-comments-alt
+                              %a{:href => link_to(post.url)}
+                                = post.title
+    %aside
+      %ul
+        - if @scope.limit > 0
+          %li
+            %a.icon-calendar{:href => link_to("archives")}
+              Archives
+        %li
+          %a.icon-tags{:href => link_to("categories_posts")}
+            Catégories
+        
+
+    = render :partial => "body_footer"

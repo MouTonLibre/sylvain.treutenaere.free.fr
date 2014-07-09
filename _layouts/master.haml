@@ -1,0 +1,30 @@
+!!! 5
+%html(lang="en" itemscope itemtype="http://schema.org/Article" prefix="og: http://ogp.me/ns#")
+  %head
+    = render :partial => "header"
+
+  %body(class="blue")
+    = render :partial => "body_header"
+
+    %section.main
+      %h1
+        = @scope.title
+        
+      - if @scope.subtitle
+        %h2.subtitle
+          = @scope.subtitle
+          
+      - if @scope.header?
+        %header
+          %ul#slide
+            - @scope.header.each do |headimg|
+              %li
+                %img{:src => headimg, :alt => "headimg"}
+        
+      %article
+        = content
+
+    = render :partial => "body_footer"
+    - if @scope.header?
+      %script{:src => link_to("minislider.js")}
+      %script{:src => link_to("callslider.js")}
