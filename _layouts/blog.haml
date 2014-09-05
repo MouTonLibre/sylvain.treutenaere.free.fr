@@ -19,7 +19,7 @@
 
         %ul.post-list
           - if @scope.limit > 0
-            - posts = @contents.list_last_posts(@scope.limit)
+            - posts = @contents.list_lasts_posts(@scope.limit)
             - posts.each do |post|
               %li
                 %h2

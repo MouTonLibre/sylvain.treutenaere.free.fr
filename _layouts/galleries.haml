@@ -14,7 +14,7 @@
 
         %ul.post-list
           - if @scope.limit > 0
-            - posts = @contents.list_last_galleries(@scope.limit)
+            - posts = @contents.list_lasts_galleries(@scope.limit)
             - posts.each do |post|
               %li
                 %h2

@@ -18,7 +18,7 @@
         = content
 
         %ul.tags
-          - $tags_posts.each do |tag, value|
+          - @post_tags.each do |tag, value|
             %li
               %a.icon-tag{:href => link_to("tags/posts/#{tag}")}
                 = tag
