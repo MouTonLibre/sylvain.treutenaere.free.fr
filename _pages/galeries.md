@@ -1,6 +1,6 @@
 ---
 layout: galleries
 title: Galeries
-limit: 5
+limit: 0
 ---
 

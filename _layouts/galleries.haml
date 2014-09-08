@@ -29,6 +29,22 @@
                   %blockquote.gallery= post.description
                 - else
                   %blockquote.gallery= post.excerpt(true)
+          - else
+            - posts = @contents.list_galleries
+            - posts.each do |post|
+              %li
+                %h2
+                  %a{:href => link_to(post.url)}
+                    = post.title
+                %ul
+                  %li.icon-calendar
+                    = post.date.strftime "%F"
+                  %li.icon-user
+                    = post.author
+                - if post.description?
+                  %blockquote.gallery= post.description
+                - else
+                  %blockquote.gallery= post.excerpt(true)
         
     %aside
       %ul
