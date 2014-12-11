@@ -18,7 +18,7 @@ La conception est le fait d'agencer des **sous-ensembles**, innovants ou non, af
 Il est donc primordial, avant de se lancer dans une phase de conception, de définir les besoins. On est ainsi en présence d'un postulat de départ qui liste l'existant et d'un but à atteindre.
 
 Partant de cet état de fait, un système doit être créé afin de combler le manque actuel, sachant que selon [Wikipédia](http://fr.wikipedia.org/wiki/Syst%C3%A8me)&#160;:
-> «&#160;;Un système est un ensemble d'éléments interagissant entre eux selon certains principes ou règles.&#160;;»
+> «&#160;Un système est un ensemble d'éléments interagissant entre eux selon certains principes ou règles.&#160;»
 
  La création intellectuelle de ce système par le choix des éléments et par la définition des principes d'interaction est ce que l'on appelle la conception.
  
@@ -30,13 +30,13 @@ Imaginez que vous ayez *besoin de communiquer* avec une personne qui se trouvera
 
 KISS est un acronyme de «&#160;Keep it simple \[&\] stupid&#160;», qui une fois traduit donne «&#160;Garde ça simple \[et\] stupide&#160;». Il existe une multitude de variantes à cet acronyme et j'ai choisi de retenir la version historique, car peu importe la forme, c'est le fond qui est intéressant.
 
-Sous ces quelques mots se cache une ligne directrice de conception pleine de sens. Elle indique que tout système conçu, matériel ou virtuel, doit garder une complexité minimale. Le terme «&#160;;simple&#160;;» postule que tout ce qui n'est pas nécessaire doit être exclu, tandis que le terme «&#160;;stupide&#160;;» stipule que l'ensemble doit être facile à comprendre. «&#160;;Stupide&#160;;» n'a rien de péjoratif ici puisqu'il sous-entend que lorsque l'on essaye de comprendre comment le système fonctionne, on devrait être amené à penser&#160;;: «&#160;;Pourquoi n'y ai-je pas pensé plus tôt&#160;;!&#160;;».
+Sous ces quelques mots se cache une ligne directrice de conception pleine de sens. Elle indique que tout système conçu, matériel ou virtuel, doit garder une complexité minimale. Le terme «&#160;simple&#160;» postule que tout ce qui n'est pas nécessaire doit être exclu, tandis que le terme «&#160;stupide&#160;» stipule que l'ensemble doit être facile à comprendre. «&#160;Stupide&#160;» n'a rien de péjoratif ici puisqu'il sous-entend que lorsque l'on essaye de comprendre comment le système fonctionne, on devrait être amené à penser&#160;: «&#160;Pourquoi n'y ai-je pas pensé plus tôt&#160;!&#160;».
 
 ##Intérêts
 
 En respectant le principe KISS, la fiabilité et la maintenabilité s'en voient améliorées. Toute option supplémentaire est source potentielle de problème, et en cas de panne, source de vérification et de besoin de compréhension supplémentaires.
 
-> «&#160;;Il semble que la perfection soit atteinte non quand il n'y a plus rien à ajouter, mais quand il n'y a plus rien à retrancher&#160;;»
+> «&#160;Il semble que la perfection soit atteinte non quand il n'y a plus rien à ajouter, mais quand il n'y a plus rien à retrancher&#160;»
 
 > — *Antoine de Saint-Exupéry*, Terre des hommes, chap. III, 1939
 
@@ -46,9 +46,9 @@ Il est intéressant de noter qu'ici il n'est aucunement question de l'utilisateu
 
 Les fondements de ce principe sont donc énoncés ici, d'une façon cependant un peu abrupte. C'est pourquoi les prochains articles présenteront des exemples concrets dans différents domaines tels que l'informatique, la conception mécanique, la rédaction ou d'autres suivant mon inspiration.
 
-Et pour finir, une citation du — certainement — plus célèbre des concepteurs&#160;;:
+Et pour finir, une citation du — certainement — plus célèbre des concepteurs&#160;:
 
-> «&#160;;La simplicité est la sophistication suprême&#160;;»
+> «&#160;La simplicité est la sophistication suprême&#160;»
 
 > — *Léonard de Vinci*
 

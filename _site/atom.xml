@@ -3,7 +3,7 @@
   <title>Sylvain Treutenaere</title>
   <link href='http://sylvain.treutenaere.free.fr/atom.xml' rel='self' />
   <link href='http://sylvain.treutenaere.free.fr/' />
-  <updated>2014-12-11T09:08:54Z</updated>
+  <updated>2014-12-11T11:19:36Z</updated>
   <id>http://sylvain.treutenaere.free.fr/</id>
   <author>
     <name>Sylvain Treutenaere</name>
@@ -28,7 +28,7 @@
 <p>Partant de cet état de fait, un système doit être créé afin de combler le manque actuel, sachant que selon <a href="http://fr.wikipedia.org/wiki/Syst%C3%A8me">Wikipédia</a>&#160;:</p>
 
 <blockquote>
-<p>«&#160;;Un système est un ensemble d&#39;éléments interagissant entre eux selon certains principes ou règles.&#160;;»</p>
+<p>«&#160;Un système est un ensemble d&#39;éléments interagissant entre eux selon certains principes ou règles.&#160;»</p>
 </blockquote>
 
 <p>La création intellectuelle de ce système par le choix des éléments et par la définition des principes d&#39;interaction est ce que l&#39;on appelle la conception.</p>
@@ -41,14 +41,14 @@
 
 <p>KISS est un acronyme de «&#160;Keep it simple [&amp;] stupid&#160;», qui une fois traduit donne «&#160;Garde ça simple [et] stupide&#160;». Il existe une multitude de variantes à cet acronyme et j&#39;ai choisi de retenir la version historique, car peu importe la forme, c&#39;est le fond qui est intéressant.</p>
 
-<p>Sous ces quelques mots se cache une ligne directrice de conception pleine de sens. Elle indique que tout système conçu, matériel ou virtuel, doit garder une complexité minimale. Le terme «&#160;;simple&#160;;» postule que tout ce qui n&#39;est pas nécessaire doit être exclu, tandis que le terme «&#160;;stupide&#160;;» stipule que l&#39;ensemble doit être facile à comprendre. «&#160;;Stupide&#160;;» n&#39;a rien de péjoratif ici puisqu&#39;il sous-entend que lorsque l&#39;on essaye de comprendre comment le système fonctionne, on devrait être amené à penser&#160;;: «&#160;;Pourquoi n&#39;y ai-je pas pensé plus tôt&#160;;!&#160;;».</p>
+<p>Sous ces quelques mots se cache une ligne directrice de conception pleine de sens. Elle indique que tout système conçu, matériel ou virtuel, doit garder une complexité minimale. Le terme «&#160;simple&#160;» postule que tout ce qui n&#39;est pas nécessaire doit être exclu, tandis que le terme «&#160;stupide&#160;» stipule que l&#39;ensemble doit être facile à comprendre. «&#160;Stupide&#160;» n&#39;a rien de péjoratif ici puisqu&#39;il sous-entend que lorsque l&#39;on essaye de comprendre comment le système fonctionne, on devrait être amené à penser&#160;: «&#160;Pourquoi n&#39;y ai-je pas pensé plus tôt&#160;!&#160;».</p>
 
 <h2>Intérêts</h2>
 
 <p>En respectant le principe KISS, la fiabilité et la maintenabilité s&#39;en voient améliorées. Toute option supplémentaire est source potentielle de problème, et en cas de panne, source de vérification et de besoin de compréhension supplémentaires.</p>
 
 <blockquote>
-<p>«&#160;;Il semble que la perfection soit atteinte non quand il n&#39;y a plus rien à ajouter, mais quand il n&#39;y a plus rien à retrancher&#160;;»</p>
+<p>«&#160;Il semble que la perfection soit atteinte non quand il n&#39;y a plus rien à ajouter, mais quand il n&#39;y a plus rien à retrancher&#160;»</p>
 
 <p>— <em>Antoine de Saint-Exupéry</em>, Terre des hommes, chap. III, 1939</p>
 </blockquote>
@@ -59,10 +59,10 @@
 
 <p>Les fondements de ce principe sont donc énoncés ici, d&#39;une façon cependant un peu abrupte. C&#39;est pourquoi les prochains articles présenteront des exemples concrets dans différents domaines tels que l&#39;informatique, la conception mécanique, la rédaction ou d&#39;autres suivant mon inspiration.</p>
 
-<p>Et pour finir, une citation du — certainement — plus célèbre des concepteurs&#160;;:</p>
+<p>Et pour finir, une citation du — certainement — plus célèbre des concepteurs&#160;:</p>
 
 <blockquote>
-<p>«&#160;;La simplicité est la sophistication suprême&#160;;»</p>
+<p>«&#160;La simplicité est la sophistication suprême&#160;»</p>
 
 <p>— <em>Léonard de Vinci</em></p>
 </blockquote>
